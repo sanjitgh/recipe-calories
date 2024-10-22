@@ -1,7 +1,9 @@
+import Header from "./assets/Header/Header";
+
 const App = () => {
   return (
     <div>
-      <h1 className="text-5xl">hello world</h1>
+      <Header></Header>
     </div>
   );
 };

@@ -1,0 +1,98 @@
+[
+  {
+    "recipe_id": 1,
+    "recipe_name": "Grilled Chicken Salad",
+    "recipe_image": "https://iili.io/2KxEcaj.webp",
+    "short_description": "A healthy grilled chicken salad with fresh vegetables.",
+    "ingredients": [
+      "200 g grilled chicken breast",
+      "50 g lettuce",
+      "100 g cherry tomatoes",
+      "50 g cucumber",
+      "2 tbsp olive oil",
+      "1 tbsp balsamic vinegar"
+    ],
+    "preparing_time": 20,
+    "calories": 350
+  },
+  {
+    "recipe_id": 2,
+    "recipe_name": "Spaghetti Carbonara",
+    "recipe_image": "https://iili.io/2KxEa3b.jpg",
+    "short_description": "Classic Italian pasta dish with creamy sauce.",
+    "ingredients": [
+      "200 g spaghetti",
+      "100 g pancetta",
+      "2 large eggs",
+      "50 g parmesan cheese",
+      "2 cloves garlic",
+      "1 tbsp olive oil"
+    ],
+    "preparing_time": 30,
+    "calories": 600
+  },
+  {
+    "recipe_id": 3,
+    "recipe_name": "Vegetarian Stir Fry",
+    "recipe_image": "https://iili.io/2KxE5Ge.jpg",
+    "short_description": "A colorful vegetable stir fry with tofu and soy sauce.",
+    "ingredients": [
+      "150 g tofu",
+      "100 g bell peppers",
+      "100 g broccoli",
+      "50 g carrots",
+      "2 tbsp soy sauce",
+      "1 tbsp sesame oil"
+    ],
+    "preparing_time": 25,
+    "calories": 250
+  },
+  {
+    "recipe_id": 4,
+    "recipe_name": "Beef Tacos",
+    "recipe_image": "https://iili.io/2KxERn9.jpg",
+    "short_description": "Mexican-style tacos filled with seasoned beef and fresh toppings.",
+    "ingredients": [
+      "200 g ground beef",
+      "100 g taco shells",
+      "50 g cheddar cheese",
+      "50 g lettuce",
+      "50 g salsa",
+      "2 tbsp sour cream"
+    ],
+    "preparing_time": 35,
+    "calories": 450
+  },
+  {
+    "recipe_id": 5,
+    "recipe_name": "Lemon Garlic Salmon",
+    "recipe_image": "https://iili.io/2KxEuZ7.jpg",
+    "short_description": "A simple and flavorful lemon garlic salmon dish.",
+    "ingredients": [
+      "200 g salmon fillets",
+      "1 lemon",
+      "3 cloves garlic",
+      "1 tbsp olive oil",
+      "2 tbsp parsley",
+      "Salt and pepper to taste"
+    ],
+    "preparing_time": 30,
+    "calories": 400
+  },
+  {
+    "recipe_id": 6,
+    "recipe_name": "Chocolate Chip Cookies",
+    "recipe_image": "https://iili.io/2KxETjS.webp",
+    "short_description": "Classic chewy chocolate chip cookies with a buttery flavor.",
+    "ingredients": [
+      "200 g flour",
+      "150 g butter",
+      "100 g sugar",
+      "100 g brown sugar",
+      "1 large egg",
+      "200 g chocolate chips"
+    ],
+    "preparing_time": 40,
+    "calories": 320
+  }
+]
