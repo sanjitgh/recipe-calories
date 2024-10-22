@@ -1,11 +1,11 @@
 import { FaRegUserCircle } from "react-icons/fa";
 const Header = () => {
   return (
-    <header className="flex justify-between container mx-auto py-5">
+    <header className="flex justify-between container mx-auto py-7 px-3">
       <div>
         <h1 className="font-bold text-3xl">Recipe Calories</h1>
       </div>
-      <div>
+      <div className="sm:block hidden">
         <ul className="flex items-center gap-4 text-lg">
           <li>
             <a href="#">Home</a>
@@ -21,8 +21,8 @@ const Header = () => {
           </li>
         </ul>
       </div>
-      <div className="flex gap-3 items-center">
-        <label className="input input-bordered flex flex-row-reverse items-center gap-2">
+      <div className="flex gap-3 items-center ">
+        <label className="input input-bordered sm:flex flex-row-reverse items-center gap-2 sm:block hidden">
           <input type="text" className="grow" placeholder="Search" />
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,9 @@ const Header = () => {
             />
           </svg>
         </label>
-        <button className="text-2xl bg-[#0BE58A] p-2 rounded-full"><FaRegUserCircle /></button>
+        <button className="text-2xl bg-[#0BE58A] p-2 rounded-full">
+          <FaRegUserCircle />
+        </button>
       </div>
     </header>
   );
