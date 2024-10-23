@@ -7,8 +7,11 @@ import Sidebar from "./component/Sidebar/Sidebar";
 
 const App = () => {
   const [recipeQueue, setRecipeQueue] = useState([]);
+  const [preparedRecipe, setPreparedRecipe] = useState([]);
+  const [totalTime, setTotalTime] = useState(0);
+  const [totalCalorie, setTotalCalorie] = useState(0);
 
-  const addRecipeQueue = recipe => {
+  const addRecipeQueue = (recipe) => {
     const isExist = recipeQueue.find(
       (previousRecipe) => previousRecipe.recipe_id === recipe.recipe_id
     );
@@ -17,6 +20,23 @@ const App = () => {
     } else {
       alert("Item already pending!");
     }
+  };
+
+  const handelRemove = (id) => {
+    //find items
+    const deleteRecipe = recipeQueue.find((recipe) => recipe.recipe_id === id);
+
+    //remove items
+    const updatedQueue = recipeQueue.filter(
+      (recipe) => recipe.recipe_id !== id
+    );
+    setRecipeQueue(updatedQueue);
+    setPreparedRecipe([...preparedRecipe, deleteRecipe]);
+  };
+
+  const calculateTimeAndCalories = (time, calorie) => {
+    setTotalTime(totalTime + time);
+    setTotalCalorie(totalCalorie + calorie);
   };
   return (
     <div>
@@ -28,7 +48,14 @@ const App = () => {
           {/* main recipe section */}
           <Recipes addRecipeQueue={addRecipeQueue}></Recipes>
           {/* sidebar */}
-          <Sidebar recipeQueue={recipeQueue}></Sidebar>
+          <Sidebar
+            recipeQueue={recipeQueue}
+            handelRemove={handelRemove}
+            preparedRecipe={preparedRecipe}
+            calculateTimeAndCalories={calculateTimeAndCalories}
+            totalTime={totalTime}
+            totalCalorie={totalCalorie}
+          ></Sidebar>
         </section>
       </main>
     </div>
