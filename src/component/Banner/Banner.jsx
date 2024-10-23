@@ -1,6 +1,6 @@
 const Banner = () => {
   return (
-    <div className="bg-[url('https://iili.io/2KzId4S.png')] bg-no-repeat bg-cover bg-center min-h-[600px] flex justify-center items-center rounded-xl mt-10 px-3">
+    <section className="bg-[url('https://iili.io/2KzId4S.png')] bg-no-repeat bg-cover bg-center min-h-[600px] flex justify-center items-center rounded-xl mt-10 px-3">
       <div className="max-w-[900px] mx-auto text-center space-y-3 text-white">
         <h1 className="font-bold sm:text-5xl text-2xl leading-normal">
           Discover an exceptional cooking class tailored for you!
@@ -19,7 +19,7 @@ const Banner = () => {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
